@@ -1,0 +1,15 @@
+{
+    "name": "ルーレット",
+    "short_name": "ルーレット",
+    "start_url": "./",
+    "display": "standalone",
+    "background_color": "#f4f5f7",
+    "theme_color": "#f4f5f7",
+    "icons": [
+        {
+            "src": "icon.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}
