@@ -1,0 +1,172 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    background: #f4f5f7;
+    color: #222;
+}
+
+.app {
+    width: 100%;
+    max-width: 480px;
+    margin: 0 auto;
+    padding: 20px 16px 40px;
+}
+
+h1 {
+    text-align: center;
+    margin: 10px 0 20px;
+    font-size: 28px;
+}
+
+h2 {
+    font-size: 18px;
+    margin-top: 0;
+}
+
+.roulette-area {
+    text-align: center;
+    background: white;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+}
+
+.pointer {
+    font-size: 30px;
+    margin-bottom: -8px;
+    position: relative;
+    z-index: 2;
+}
+
+#roulette {
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px;
+}
+
+button {
+    border: none;
+    border-radius: 12px;
+    padding: 13px 18px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#spinButton {
+    width: 100%;
+    background: #222;
+    color: white;
+    font-size: 18px;
+}
+
+#spinButton:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+#result {
+    min-height: 40px;
+    margin-top: 18px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.settings {
+    margin-top: 20px;
+    background: white;
+    padding: 18px;
+    border-radius: 20px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+}
+
+.item-row {
+    display: grid;
+    grid-template-columns: 1fr 80px 44px;
+    gap: 8px;
+    margin-bottom: 10px;
+}
+
+.item-row input {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.delete-button {
+    background: #eeeeee;
+    color: #555;
+    padding: 8px;
+}
+
+#addButton {
+    width: 100%;
+    margin-top: 8px;
+    background: #e9e9e9;
+    color: #222;
+}
+
+.bottom-buttons {
+    margin-top: 16px;
+}
+
+#resetButton {
+    width: 100%;
+    background: white;
+    color: #555;
+    border: 1px solid #ddd;
+}
+
+.settings-wrapper {
+    margin-top: 20px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+}
+
+.settings-wrapper summary {
+    padding: 16px 18px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    list-style: none;
+    user-select: none;
+    background: #ffffff;
+    border-radius: 14px;
+}
+
+.settings-wrapper summary::-webkit-details-marker {
+    display: none;
+}
+
+.settings-wrapper summary::after {
+    content: "＋";
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    color: #666;
+}
+
+.settings-wrapper[open] summary::after {
+    content: "－";
+}
+
+.settings-wrapper[open] summary {
+    border-bottom: 1px solid #eeeeee;
+}
+
+.settings-wrapper .settings {
+    margin-top: 0;
+    border-radius: 0;
+    box-shadow: none;
+    padding-top: 18px;
+}

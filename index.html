@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ルーレット</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="app">
+
+        <h1>🎯 ルーレット</h1>
+
+        <section class="roulette-area">
+
+            <div class="pointer">▼</div>
+
+            <canvas id="roulette" width="320" height="320"></canvas>
+
+            <button id="spinButton">
+                ルーレットを回す
+            </button>
+
+            <div id="result"></div>
+
+        </section>
+
+
+    <details class="settings-wrapper">
+
+    <summary>
+        ⚙️ ルーレット設定
+    </summary>
+
+    <section class="settings">
+
+        <h2>選択肢と残り個数</h2>
+
+        <div id="itemList"></div>
+
+        <button id="addButton">
+            ＋ 選択肢を追加
+        </button>
+
+        <div class="bottom-buttons">
+
+            <button id="resetButton">
+                最初の個数に戻す
+            </button>
+
+        </div>
+
+    </section>
+
+</details>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
