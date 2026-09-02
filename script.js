@@ -523,3 +523,27 @@ resetButton.addEventListener("click", () => {
 
 renderItems();
 drawWheel();
+
+/* ------------------------------
+   オフライン対応
+------------------------------ */
+
+if ("serviceWorker" in navigator) {
+
+    window.addEventListener("load", () => {
+
+        navigator.serviceWorker
+            .register("./service-worker.js")
+            .then(() => {
+                console.log("オフライン対応の準備が完了しました");
+            })
+            .catch(error => {
+                console.error(
+                    "Service Workerの登録に失敗しました",
+                    error
+                );
+            });
+
+    });
+
+}
